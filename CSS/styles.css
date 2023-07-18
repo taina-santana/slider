@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe0ff;
+}
+
+.slider{
+    border: 25px solid #8f6277;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.navegadormanual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-bt{
+    border: 2px solid #8f6277;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-bt:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-bt:hover{
+    background-color: #8f6277;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+
+.navegador div{
+    border: 2px solid #8f6277;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegador{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegador div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegador .botao1{
+    background-color: #8f6277;
+}
+
+#radio2:checked ~ .navegador .botao2{
+    background-color: #8f6277;
+}
+
+#radio3:checked ~ .navegador .botao3{
+    background-color: #8f6277;
+}
+
+#radio4:checked ~ .navegador .botao4{
+    background-color: #8f6277;
+}
